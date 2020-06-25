@@ -1,0 +1,98 @@
+$color_main: #02cab9;
+$font_color_main: #484848;
+$title_color_disabled: #d2d2d2;
+$font_color_disabled: #b6b6b6;
+
+.componentBlock {
+	display: flex;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+
+	&>.displayBlock {
+		display: flex;
+		flex-direction: column;
+		width: 84%;
+		margin-top: 4rem;
+		color: $font_color_main;
+
+		&>.calendarBlock {
+			&>.infoBlock {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				box-sizing: border-box;
+				margin: 2rem 0 1.5rem 0;
+
+				&>.pickBlock {
+					display: flex;
+					align-items: center;
+
+					&>.pagBlock {
+						margin: auto;
+					}
+
+					&>.dateBlock {
+						margin-left: 1.5rem;
+					}
+				}
+
+				&>.tzBlock {
+					font-size: 0.75rem;
+				}
+			}
+
+			&>.weekdayBlock {
+				display: flex;
+				width: 100%;
+				justify-content: space-between;
+
+				&>.dayItem {
+					display: flex;
+					flex-direction: column;
+					width: 12%;
+
+					&>.dayTitle {
+						display: flex;
+						flex-direction: column;
+						box-sizing: border-box;
+						padding-top: 0.5rem;						
+						border-top: 4px solid $color_main;
+
+						&>.titleItem {
+							display: flex;
+							justify-content: center;
+						}
+
+						&.__disabled {
+							border-top: 4px solid $title_color_disabled;
+							color: $title_color_disabled;
+						}
+					}
+
+					&>.timeRange {
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						margin-top: 1rem;
+
+						&>.timeItem {
+							display: flex;
+							justify-content: center;
+							margin: 0.5rem 0;
+							font-size: 0.75rem;
+							font-weight: bolder;
+							color: $color_main;
+
+							&.__disabled {
+								color: $font_color_disabled;
+								font-weight: 400;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

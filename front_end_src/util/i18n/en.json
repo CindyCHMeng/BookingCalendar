@@ -1,0 +1,13 @@
+{
+  "Available times": "Available times",
+  "TZ_Msg": "* All the timings listed are in your timezone: GMT{timeZone}",
+  "Week": {
+    "Sun": "Sun",
+    "Mon": "Mon",
+    "Tue": "Tue",
+    "Wed": "Wed",
+    "Thu": "Thu",
+    "Fri": "Fri",
+    "Sat": "Sat"
+  }
+}
