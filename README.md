@@ -11,7 +11,7 @@
   - Show booked time slots in grey.
   - Show available time slots in green.
 - **Support i18n with Chinese and English language.**
-- **Follow fake API rule.**
+- **Follow the rule of fake API format.**
   - availabe: [{ start: *time*, end: *time* }, ...]
   - booked: [{ start: *time*, end: *time* }, ...]
 
